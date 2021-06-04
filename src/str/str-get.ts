@@ -1,4 +1,4 @@
-import YiuIs from './str-is'
+import YiuStrIs from './str-is'
 
 /**
  * 获取字符串反转
@@ -15,7 +15,7 @@ function GetReverse(str: string): string {
  * @constructor
  */
 function GetFirstStr(str: string): string {
-    if (YiuIs.IsEmpty(str)) {
+    if (YiuStrIs.IsEmpty(str)) {
         return ''
     }
     return str[0]

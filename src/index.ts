@@ -1,7 +1,7 @@
-import YiuGet from './str/str-get'
-import YiuIs from './str/str-is'
+import YiuStrGet from './str/str-get'
+import YiuStrIs from './str/str-is'
 
 export {
-    YiuGet,
-    YiuIs,
+    YiuStrGet,
+    YiuStrIs,
 }
