@@ -45,7 +45,7 @@ export default [
             babel({ babelHelpers: 'bundled' }),
         ],
         // ES和Node直接在依赖中，不用重复打包了
-        external: ['lodash-es'],
+        // external: ['lodash-es'],
         output: [
             // 打包器
             {
