@@ -5,7 +5,7 @@ import YiuStrIs from './str-is'
  * @param str
  * @constructor
  */
-function GetReverse(str: string): string {
+function getReverse(str: string): string {
     return str.split('').reverse().join('')
 }
 
@@ -14,14 +14,14 @@ function GetReverse(str: string): string {
  * @param str
  * @constructor
  */
-function GetFirstStr(str: string): string {
-    if (YiuStrIs.IsEmpty(str)) {
+function getFirstStr(str: string): string {
+    if (YiuStrIs.isEmpty(str)) {
         return ''
     }
     return str[0]
 }
 
 export default {
-    GetFirstStr,
-    GetReverse,
+    getReverse,
+    getFirstStr,
 }

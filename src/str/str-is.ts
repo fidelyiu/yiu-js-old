@@ -1,11 +1,9 @@
-import { startsWith } from 'lodash-es'
-
 /**
  * 是否为空
  * @param str
  * @constructor
  */
-function IsEmpty(str: string): boolean {
+function isEmpty(str: string): boolean {
     return !!str
 }
 
@@ -14,8 +12,8 @@ function IsEmpty(str: string): boolean {
  * @param str
  * @constructor
  */
-function IsNotEmpty(str: string): boolean {
-    return !IsEmpty(str)
+function isNotEmpty(str: string): boolean {
+    return !isEmpty(str)
 }
 
 /**
@@ -23,8 +21,8 @@ function IsNotEmpty(str: string): boolean {
  * @param str
  * @constructor
  */
-function IsBlank(str: string): boolean {
-    return IsEmpty(str) || str.trim() === ''
+function isBlank(str: string): boolean {
+    return isEmpty(str) || str.trim() === ''
 }
 
 /**
@@ -32,23 +30,12 @@ function IsBlank(str: string): boolean {
  * @param str
  * @constructor
  */
-function IsNotBlank(str: string): boolean {
-    return !IsBlank(str)
-}
-
-/**
- * 判断是否以指定字符串开始
- * @param str
- * @param startStr 指定字符串
- * @constructor
- */
-function IsStartWith(str: string, startStr: string): boolean {
-    return startsWith(str, startStr)
+function isNotBlank(str: string): boolean {
+    return !isBlank(str)
 }
 
 export default {
-    IsEmpty,
-    IsNotEmpty,
-    IsBlank,
-    IsStartWith,
+    isEmpty,
+    isNotEmpty,
+    isBlank,
 }
