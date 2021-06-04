@@ -1,6 +1,6 @@
 {
   "name": "yiu-js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "一个JS工具库",
   "author": {
     "name": "Fidel Yiu",
@@ -18,8 +18,7 @@
   "jsdelivr": "dist/yiu.iife.js",
   "browser": "dist/yiu.iife.js",
   "scripts": {
-    "build": "tsc",
-    "build:rollup": "rollup -c",
+    "build": "tsc && rollup -c",
     "tsc:init": "tsc -init",
     "npm:login": "npm adduser",
     "npm:push": "npm publish"

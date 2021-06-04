@@ -1,8 +1,7 @@
-import YiuStr from './str/str-is'
-
-const Greeter = (name: string) => `Hello ${name}`
+import YiuGet from './str/str-get'
+import YiuIs from './str/str-is'
 
 export {
-    YiuStr,
-    Greeter,
+    YiuGet,
+    YiuIs,
 }
