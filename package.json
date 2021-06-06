@@ -25,7 +25,8 @@
   },
   "license": "MIT",
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "!dist/index.js"
   ],
   "devDependencies": {
     "@babel/core": "^7.14.3",
