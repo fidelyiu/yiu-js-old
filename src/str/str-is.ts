@@ -3,7 +3,7 @@
  * @param str
  * @constructor
  */
-function isEmpty(str: string): boolean {
+export function strIsEmpty(str: string): boolean {
     return !!str
 }
 
@@ -12,8 +12,8 @@ function isEmpty(str: string): boolean {
  * @param str
  * @constructor
  */
-function isNotEmpty(str: string): boolean {
-    return !isEmpty(str)
+export function strIsNotEmpty(str: string): boolean {
+    return !strIsEmpty(str)
 }
 
 /**
@@ -21,8 +21,8 @@ function isNotEmpty(str: string): boolean {
  * @param str
  * @constructor
  */
-function isBlank(str: string): boolean {
-    return isEmpty(str) || str.trim() === ''
+export function strIsBlank(str: string): boolean {
+    return strIsEmpty(str) || str.trim() === ''
 }
 
 /**
@@ -30,12 +30,6 @@ function isBlank(str: string): boolean {
  * @param str
  * @constructor
  */
-function isNotBlank(str: string): boolean {
-    return !isBlank(str)
-}
-
-export default {
-    isEmpty,
-    isNotEmpty,
-    isBlank,
+export function isNotBlank(str: string): boolean {
+    return !strIsBlank(str)
 }
