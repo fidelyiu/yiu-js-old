@@ -4,6 +4,7 @@ import * as YiuTimeGet from './time/time-get'
 import * as YiuNumGet from './num/num-get'
 import * as YiuNumIs from './num/num-is'
 import * as YiuBoolGet from './bool/bool-get'
+import * as YiuScript from './script/index'
 
 export {
     YiuStrGet,
@@ -12,4 +13,5 @@ export {
     YiuNumGet,
     YiuNumIs,
     YiuBoolGet,
+    YiuScript,
 }
