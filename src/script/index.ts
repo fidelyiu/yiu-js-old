@@ -4,7 +4,7 @@
  * @param data 判断对象
  * @param errorLogMes 错误日志
  */
-export function isBoolWithFalseLog(data: any, errorLogMes: string): boolean {
+export function toBoolWithFalseLog(data: any, errorLogMes: string): boolean {
     if (!data) {
         console.error(errorLogMes)
         return false
