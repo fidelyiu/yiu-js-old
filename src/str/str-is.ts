@@ -48,10 +48,10 @@ export function strIsContainStr(s: string, i: string): boolean {
 }
 
 export function strIsContainSStr(s: string, sList: Array<string>): boolean {
-    sList.forEach(item => {
-        if (strIsContainStr(s, item)) {
+    for (let i = sList.length - 1; i >= 0; i--) {
+        if (strIsContainStr(s, sList[i])) {
             return true
         }
-    })
+    }
     return false
 }
