@@ -30,6 +30,15 @@ export function strIsBlank(str: string): boolean {
  * @param str
  * @constructor
  */
-export function isNotBlank(str: string): boolean {
+export function strIsNotBlank(str: string): boolean {
     return !strIsBlank(str)
+}
+
+export function strIsEnd(s: string, e: string): boolean {
+    const last = s.lastIndexOf(e)
+    if (last == -1) {
+        return false
+    } else {
+        return s.length === e.length + last
+    }
 }

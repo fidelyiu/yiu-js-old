@@ -1,4 +1,4 @@
-import { strIsEmpty } from './str-is'
+import { strIsEmpty, strIsEnd } from './str-is'
 
 /**
  * 获取字符串反转
@@ -15,4 +15,12 @@ export function strGetFirstStr(str: string): string {
         return ''
     }
     return str[0]
+}
+
+export function strGetDelEndStr(s: string, e: string): string {
+    if (!strIsEnd(s, e)) {
+        return s
+    } else {
+        return s.slice(0, s.lastIndexOf(e))
+    }
 }
