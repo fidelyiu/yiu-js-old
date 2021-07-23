@@ -42,3 +42,16 @@ export function strIsEnd(s: string, e: string): boolean {
         return s.length === e.length + last
     }
 }
+
+export function strIsContainStr(s: string, i: string): boolean {
+    return s.indexOf(i) !== -1
+}
+
+export function strIsContainSStr(s: string, sList: Array<string>): boolean {
+    sList.forEach(item => {
+        if (strIsContainStr(s, item)) {
+            return true
+        }
+    })
+    return false
+}
