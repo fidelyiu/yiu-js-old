@@ -23,14 +23,14 @@ yarn add yiu-js
 
 ```html
 
-<script src="https://unpkg.com/yiu-js@1.0.18/yiu.iife.min.js"></script>
+<script src="https://unpkg.com/yiu-js@1.0.19/yiu.iife.min.js"></script>
 ```
 
 浏览器有其他依赖：
 
 ```html
 <script src="https://unpkg.com/moment@2.29.1/moment.js"></script>
-<script src="https://unpkg.com/yiu-js@1.0.18/yiu.onlib.iife.min.js"></script>
+<script src="https://unpkg.com/yiu-js@1.0.19/yiu.onlib.iife.min.js"></script>
 
 <script>
     console.log(Yiu)

@@ -5,7 +5,7 @@ import moment from 'moment'
  */
 export function timeGetStr1(time?: moment.MomentInput): string {
     const nowDate = moment(time)
-    return `${timeGetStr3(nowDate)} ${timeGetStr5(nowDate)}}`
+    return `${timeGetStr3(nowDate)} ${timeGetStr5(nowDate)}`
 }
 
 /**
